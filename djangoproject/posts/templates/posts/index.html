@@ -1,0 +1,17 @@
+
+{%extends 'posts/layout.html'%}
+
+{% block content %}
+<h3 class = "center-align blue lighten-3">{{title}}</h3>
+<u1 class= "collection">
+    {% for post in posts %}
+        <li class = "collection-item"><a href="/posts/details/{{post.id}}">{{post.title}}</a></li>
+    {% endfor %}
+</u1>
+
+<br/>
+		<a href = "http://imgsv.imaging.nikon.com/lineup/dslr/d600/img/sample01/img_05_l.jpg" target = "_blank">
+		<img src = "http://imgsv.imaging.nikon.com/lineup/dslr/d600/img/sample01/img_05_l.jpg" alt = "My sample images" width = "200" height = "150">
+		</a>
+
+{% endblock %}
